@@ -8,17 +8,13 @@
 }
 
 html {
-  overflow-y: scroll;
-
   color: $color-gray;
-
   font-family: $font-main;
   font-size: $font-size;
 }
 
 h1 {
   letter-spacing: 0.08em;
-
   font-family: $font-header;
   font-weight: 300;
   line-height: 1.2em;
@@ -34,9 +30,50 @@ h1 {
   }
 }
 
+h2 {
+  margin-top: 0px;
+  color: $color-primary;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: 1.2em;
+  
+  @include lg-min {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  @include lg-md {
+    font-size: 2rem;
+    margin-bottom: 2.625rem;
+  }
+  @include md-sm{
+    font-size: 1.5rem;
+    margin-bottom: 2.25rem;
+  }
+
+  @include sm {
+    margin-bottom: 2.25rem;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+}
+
+h3 {
+  letter-spacing: 0.05em;
+  color: $color-gray;
+  font-size: 1.125rem;
+}
+
 a {
   text-decoration: none;
-
   color: $color-light;
 }
 
+p {
+  color: $color-gray;
+}
+
+img {
+  border-style: none;
+}
